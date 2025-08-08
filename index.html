@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Yazan Rentals | Coming Soon</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+  <style>
+    .loading-text span {
+      opacity: 0;
+      animation: fadeInUp 1.5s ease forwards;
+      display: inline-block;
+    }
+    .loading-text span:nth-child(1) { animation-delay: 0.1s; }
+    .loading-text span:nth-child(2) { animation-delay: 0.2s; }
+    .loading-text span:nth-child(3) { animation-delay: 0.3s; }
+    .loading-text span:nth-child(4) { animation-delay: 0.4s; }
+    .loading-text span:nth-child(5) { animation-delay: 0.5s; }
+    .loading-text span:nth-child(6) { animation-delay: 0.6s; }
+    .loading-text span:nth-child(7) { animation-delay: 0.7s; }
+    .loading-text span:nth-child(8) { animation-delay: 0.8s; }
+    .loading-text span:nth-child(9) { animation-delay: 0.9s; }
+    .loading-text span:nth-child(10) { animation-delay: 1s; }
+    .loading-text span:nth-child(11) { animation-delay: 1.1s; }
+    .loading-text span:nth-child(12) { animation-delay: 1.2s; }
+
+    @keyframes fadeInUp {
+      0% {
+        transform: translateY(20px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body class="bg-white flex flex-col items-center justify-center h-screen text-center px-6">
+  <img src="yazanlogo.png" alt="Yazan Logo" class="w-24 h-24 mb-6"/>
+  
+  <h1 class="loading-text text-4xl sm:text-5xl font-extrabold text-[#A904BC] mb-4">
+    <span>Y</span><span>a</span><span>z</span><span>a</span><span>n</span>&nbsp;
+    <span>R</span><span>e</span><span>n</span><span>t</span><span>a</span><span>l</span><span>s</span>
+  </h1>
+
+  <p class="text-lg sm:text-xl text-gray-700">Stay tuned for the best real estate rental app in the Middle East!</p>
+
+  <p class="mt-10 text-sm text-gray-400">© 2025 Yazan Rentals. All rights reserved.</p>
+</body>
+</html>
